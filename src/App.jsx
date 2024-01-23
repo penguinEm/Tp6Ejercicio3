@@ -3,7 +3,7 @@ import Titulo from "./components/Titulo";
 function App() {
   return (
     <>
-      <Titulo cambiarTitulo="my friend!" />
+      <Titulo cambiarTitulo="my friend" />
     </>
   );
 }
