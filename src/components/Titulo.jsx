@@ -1,18 +1,18 @@
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 
 const Titulo = ({ cambiarTitulo }) => {
   const [argegarTitulo, setAgregarTitulo] = useState("");
 
-
   return (
-    <main>
+    <section className="text-center">
       <h1>
         Hello {cambiarTitulo} {argegarTitulo}
       </h1>
-      <button onClick={() => setAgregarTitulo("(from changed state)!")}>
+      <Button variant="outline-primary" onClick={() => setAgregarTitulo("(from changed state)!")}>
         Click me!
-      </button>
-    </main>
+      </Button>
+    </section>
   );
 };
 
